@@ -15,12 +15,12 @@ module.exports = override(
     require('react-app-rewire-postcss')(config, {
       plugins: loader => [
         require('cssnano')({
-          preset: 'advanced',
+          // preset: 'advanced',
           autoprefixer: false,
           'postcss-zindex': false,
         }),
       ],
-    })
+    });
     return config
   }
 );
