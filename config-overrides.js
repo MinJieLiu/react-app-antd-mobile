@@ -11,4 +11,16 @@ module.exports = override(
       'brand-primary': '#1DA57A',
     },
   }),
+  (config) => {
+    require('react-app-rewire-postcss')(config, {
+      plugins: loader => [
+        require('cssnano')({
+          preset: 'advanced',
+          autoprefixer: false,
+          'postcss-zindex': false,
+        }),
+      ],
+    })
+    return config
+  }
 );
