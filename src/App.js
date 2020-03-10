@@ -1,5 +1,5 @@
-import React from "react";
-import { WingBlank, List, Picker, WhiteSpace } from "antd-mobile";
+import React from 'react';
+import { WingBlank, List, Picker, WhiteSpace } from 'antd-mobile';
 import { PhotoProvider, PhotoConsumer } from 'react-photo-view';
 import 'react-photo-view/dist/index.css';
 
